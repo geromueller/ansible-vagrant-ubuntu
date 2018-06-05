@@ -1,0 +1,4 @@
+- name: install nginx
+  apt: pkg={{item}} state=present
+  with_items:
+    - nginx
